@@ -184,7 +184,7 @@ footer {
   .header__quote {
     display: block;
     min-width: 100%;
-    background-image: url(/assets/images/DeLorian_Blueprint.jpg);
+    background-image: url('../images/DeLorian_Blueprint.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -275,7 +275,7 @@ footer {
   .header__quote {
     display: block;
     min-width: 100%;
-    background-image: url(/assets/images/DeLorian_Blueprint.jpg);
+    background-image: url('../images/DeLorian_Blueprint.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
