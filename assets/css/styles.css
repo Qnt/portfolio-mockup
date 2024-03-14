@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 16px;
+  font-family: 'Montserrat';
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  margin: 1rem auto;
+  width: 90%;
+}
+
+.header__quote {
+  display: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.2em;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav li {
+  padding: 0.5rem;
+  border: none;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#about,
+#projects,
+#contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#about {
+  line-height: 1.3em;
+  align-self: center;
+}
+
+#about p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+#projects a,
+#projects a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+#projects a {
+  width: 100%;
+}
+
+#projects ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#projects li {
+  display: flex;
+  padding: 0.5rem;
+  flex: 1 0 100%;
+}
+
+#projects img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#projects figure {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  position: relative;
+  min-height: 100%;
+}
+
+#projects figcaption {
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+#contacts ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+@media screen and (orientation: landscape) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  #projects ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  #projects li {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 2.125rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .header__quote {
+    display: block;
+    min-width: 100%;
+    background-image: url(/assets/images/DeLorian_Blueprint.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+  }
+
+  .header__quote div {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    width: auto;
+    padding: 1rem 3rem;
+  }
+
+  .header__quote p {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  #projects ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  #projects li {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 2.125rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  body {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 2.125rem;
+    letter-spacing: -0.0625rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    line-height: 1.067;
+    letter-spacing: -0.05rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.083;
+    letter-spacing: -0.03125rem;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .header__quote {
+    display: block;
+    min-width: 100%;
+    background-image: url(/assets/images/DeLorian_Blueprint.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+  }
+
+  .header__quote div {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    width: auto;
+    padding: 1rem 3rem;
+  }
+
+  .header__quote p {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  main {
+    width: 80%;
+    gap: 2rem;
+  }
+
+  #about,
+  #projects,
+  #contacts {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  h2 {
+    border-bottom: none;
+    border-right: 4px solid black;
+    min-width: 25%;
+    text-align: right;
+    padding: 0 1rem;
+  }
+
+  #projects ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  #projects li {
+    flex: 0 0 50%;
+  }
+
+  #projects li:first-of-type {
+    flex: 0 0 100%;
+  }
+
+  img {
+    transition: all 0.5s ease-in-out;
+  }
+
+  img:hover {
+    filter: brightness(1.2);
+  }
+}
